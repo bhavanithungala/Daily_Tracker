@@ -1,0 +1,48 @@
+.header {
+  position: fixed; /* Fix header to the top of the viewport */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Example background color */
+  color: white;
+  z-index: 100; /* Ensure the header stays above the content */
+  width: 100%; /* Make sure the header spans across the full width */
+}
+
+.tabs {
+  display: flex;
+  background-color: #333030;
+  justify-content: flex-end; /* Space out tabs evenly */
+  gap: 30px;
+  align-items: center; /* Vertically center the tabs */
+  flex-grow: 1; /* Allow the tabs to stretch to fill the available space */
+}
+
+.tab {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  align-content: center;
+  border-radius: none; /* Optional: rounded corners for tabs */
+  padding: 2.2%;
+  height: 50%; /* Allow the tab to take the full height of the header */
+}
+
+.logo {
+  width: 30%;
+  height: 100%;
+}
+
+.tab:hover {
+  background-color: #555;
+}
+
+/* Optional: To highlight the active tab permanently */
+.tab-active {
+  background-color: #f8e7bd; /* Background color for active tab */
+  color: black; /* Text color for active tab */
+}

@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.main-content {
+  overflow: auto; /* Enable vertical scrolling if content overflows */
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  background-color: #f8e7bd; /* Example background color */
+  justify-content: center;
+  align-items: center;
+}
